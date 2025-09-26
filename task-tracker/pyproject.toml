@@ -1,0 +1,23 @@
+[project]
+name = "task-tracker"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "John Doe", email = "johndoe@email.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.18.2",
+    "ruff>=0.13.1",
+]
+
+[project.scripts]
+taskr = "task_tracker.cli:main"
